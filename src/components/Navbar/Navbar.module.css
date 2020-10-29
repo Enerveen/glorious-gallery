@@ -1,0 +1,33 @@
+.container {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.container h1 {
+  cursor: default;
+  font-size: 32px;
+  margin: 0;
+}
+
+.container h1:hover {
+  color: #ffbc0d;
+}
+
+.container svg:hover {
+  fill: #ffbc0d;
+}
+
+@media (max-width: 600) {
+  .container h1 {
+    font-size: 18px;
+  }
+}

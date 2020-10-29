@@ -1,0 +1,30 @@
+.popup {
+  font-size: 0;
+  padding: 20px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+}
+
+.popup > img {
+  max-width: 70vw;
+  max-height: 70vh;
+}
+
+.popup > svg {
+  cursor: pointer;
+  fill: #d9d9d9;
+  height: 60px;
+  width: 60px;
+}
+
+.popup > svg:hover {
+  fill: #fff;
+}

@@ -1,0 +1,32 @@
+.loader {
+  margin: 10px;
+  position: relative;
+  color: #212121;
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+
+.loader:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Loading...";
+  color: #ffbc0d;
+  overflow: hidden;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .loader {
+    font-size: 32px;
+  }
+}
